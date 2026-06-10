@@ -1,34 +1,32 @@
-#menu{
 
-background: #663339;
-}
-
- :root{
---vinho: #663339
---creme: #F5F0E5
---fundo: #ECE2CC
---card: #6A363C
---card2: #39060A
---linear: #E0E0E0
-
+:root{
+    --vinho: #663339;
+    --creme: #F5F0E5;
+    --fundo: #ECE2CC;
+    --card: #6A363C;
+    --card2: #39060A;
+    --linear: #E0E0E0;
+     --texto:#2c2416;
+     --amarelo:#D4AF37;
+    
 }
 * { 
-margin: 0;
-padding: 0;
-box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
 }
 
 header{
-position:sticky;
-top: 0;
-display: flex;
-justify-content: space-between;
-align-items: center;
-height: 150px;
-background: var(--creme);
-backdrop-filter: blur(15px);
--webkit-backdrop-filter: blur(20px);
-box-shadow:0 6px 6px rgb(0, 0, 0, 0.4);
+    position:sticky;
+    top: 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 150px;
+    background: var(--creme);
+    backdrop-filter: blur(15px);
+    -webkit-backdrop-filter: blur(20px);
+    box-shadow:0 6px 6px rgb(0, 0, 0, 0.4);
 }
 
 
@@ -40,3 +38,341 @@ box-shadow:0 6px 6px rgb(0, 0, 0, 0.4);
     z-index: 10px;
     margin: 30px;
 }
+
+.menu {
+    max-width: 600px;
+    margin: 0 auto;
+    background-color: var(--creme); 
+    padding: 20px;
+}
+
+
+#menu{
+     width:1000px;
+    height: 70px ;
+background: #663339;
+border-radius: 20px;
+}
+
+
+nav {
+  display: flex;
+  gap: 12px;
+  padding: 0px 40px;
+  align-items: center;
+  margin-right: 50px;
+   
+
+}
+
+#menu a{
+    text-decoration: none;
+    color: var(--creme);
+    font-size: 17px;
+      margin: 8px;
+      text-align:justify;
+   
+
+}
+.titulo{
+text-align: center;
+  color: #D4AF37; 
+  font-size: 1.5rem;
+  font-weight: normal;
+  margin-bottom: 20px;
+  position: relative;
+}
+
+.COMPRA{
+    text-align: center;
+  color: var(--vinho); 
+  font-size: 30px;
+  font-weight: 180px;
+  margin-bottom: 20px;
+  position: relative;
+margin-top: 50px;
+/*min-height: 10dvh;*/
+
+}
+
+body{
+background-color: #ECE2CC;
+  color: var(--texto);
+  font-size: 15px;
+
+}
+
+.linha-divisoria{
+  height: 1px;              
+  background-color: #000000; 
+  width: 300px;             
+  margin: 5px 37%;
+
+}
+
+.linha-divisoria2{
+  height: 1px;              
+  background-color: #000000; 
+  width: 300px;             
+  margin: px 50%;
+}
+
+.caixa{
+     width: 1300px;
+    height: 70px ;
+    background: #663339;
+    border-radius: 20px;
+    margin: auto;
+text-decoration: none;
+padding: 13px 20px;
+
+  margin: 0 auto;
+  
+}
+
+.opcoes {
+  color: #f0e8d8;
+  font-size: 24px;
+  font-weight: 60;
+  text-transform: uppercase;
+  background-color: #663339;
+  border:none;
+  
+}
+
+.cardapio {
+  background: var(--creme);
+
+  margin: 0 auto;
+  width: 1200px;
+}
+
+.comida{
+padding: 30px;
+font-size: 30px;
+  font-weight: 60;
+
+}
+.categoria {
+
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+  margin: 0 auto;
+  flex-wrap: wrap;
+   font-weight: 60;
+}
+
+.titulo{
+  color: var(--amarelo);
+  font-size: 40px;
+  white-space: nowrap;
+  justify-content: center;
+padding: 13px 20px;
+display: flex;
+
+}
+
+.item {
+  display: flex;
+  align-items: center;
+  gap: 3px;
+  padding: 13px 0;
+  border-bottom: 1px solid var(--texto);
+}
+
+
+.preco{
+    text-align: right;
+    font-size: 30px;
+    margin: 50px;
+    
+}
+
+.controle {
+  display: flex;
+  align-items: center;
+  border: 1.5px solid var(--texto);
+  border-radius: 8px;
+  overflow: hidden;
+  width: 118px;
+
+}
+.controle button {
+  background: var(--creme);
+  border: none;
+  font-size: 20px;
+  font-weight: 400;
+  width: 36px;
+  height: 36px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: var(--texto);
+  transition: background 0.12s;
+
+}
+
+.controle button:hover {
+  background: rgba(0,0,0,0.07);
+}
+
+.controle span {
+  flex: 1;
+  text-align: center;
+  font-size: 15px;
+  color: var(--texto);
+}
+
+
+/*
+.Pagamento {
+    height: 115px;
+ width: 1800px;
+  margin: 2rem auto 0;
+  padding: 20px;
+  background-color: var(--creme);
+  border-radius: 15px ;
+  display: flex;
+  gap: 100px;
+  text-align: center;
+
+
+}
+
+.texto{
+ font-size: 16px;
+  font-weight: 700;
+  color: var(--card);
+  margin-bottom: 0.75rem;
+  display: block;
+  text-align: center;
+
+}
+
+.card-dinheiro{
+    width: 300px;
+    height: 50px;
+     text-align: center;
+    background: #663339;
+  border-radius: 15px;
+  padding: 12px 20px;
+  margin-bottom: 10px;
+  cursor: pointer;
+  margin-top: 30px;
+  align-items: center;
+
+}
+
+.card-dinheiro p {
+  font-size: 17px;
+  color: var(--creme);
+ 
+}
+
+*/
+
+.Pagamento {
+    height: 130px;
+ width: 1750px;
+  margin: 2rem auto 0;
+  padding: 0 1rem;
+  text-align: center;
+  background-color: var(--creme);
+  border-radius: 15px;
+
+}
+
+
+.card-dinheiro {
+  display: inline-flex;        /* deixa os 3 cards lado a lado */
+  width: 400px;
+  height: 50px;
+  align-items: center;
+  justify-content: center;
+  background: var(--card);
+  border-radius: 8px;
+  margin: 0 30px;
+  cursor: pointer;
+ 
+  margin-top: 30px;
+}
+
+.card-dinheiro p {
+  color: #fff;
+  font-size: 15px;
+  font-weight: 70;
+  margin: 0;
+
+}
+
+
+.texto1{
+   color: #663339;
+   font-size: 30px;
+   margin-top: 10px;
+    border-bottom: 1px solid var(--texto);
+
+
+}
+
+.resumo {
+      height: 130px;
+ width: 1750px;
+  margin: 2rem auto 0;
+  padding: 0 1rem;
+  text-align: center;
+  background-color: var(--creme);
+  border-radius: 15px;
+  
+
+}
+
+.texto2{
+   color: #663339;
+   font-size: 30px;
+      position: relative;
+    top: 50px;
+  margin: 60px; 
+   
+
+}
+
+.finalizar{
+    height: 130px;
+ width: 1750px;
+  margin: 2rem auto 0;
+  padding: 0 1rem;
+  text-align: center;
+  background-color: var(--creme);
+  border-radius: 15px;
+}
+
+ 
+.finalizar:hover {
+  background: var(--vinho);
+}
+ 
+.finalizar .texto3 {
+  color: #fff;
+  font-size: 15px;
+  font-weight: 600;
+  margin: 0;
+}
+
+
+
+
+ 
+
+
+
+
+
+ 
+ 
+
+
+
+
+
