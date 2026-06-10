@@ -1,0 +1,17 @@
+header {
+  position: sticky;
+  top: 0;
+  z-index: 9999;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px 8%;
+  background: rgba(255, 255, 255, 0.75);
+  backdrop-filter: blur(20px);
+  -webkit-backdrop-filter: blur(20px);
+  box-shadow: 0 2px 20px rgba(0, 0, 0, 0.8);
+}
+#menu{
+
+background: #663339;
+}
