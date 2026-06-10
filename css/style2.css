@@ -1,0 +1,104 @@
+:root {
+  --vinho: #663339;
+  --creme: #f5f0e5;
+  --fundo: #ece2cc;
+  --card: #6a363c;
+  --card2: #39060a;
+  --linear: #e0e0e0;
+  --marrom: #825a5a;
+  --amarelo: #ffe4a9;
+  --cinza: #decfc4;
+}
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+header {
+  position: sticky;
+  top: 0;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 150px;
+  backdrop-filter: blur(15px);
+  -webkit-backdrop-filter: blur(20px);
+  box-shadow: 0 6px 6px rgb(0, 0, 0, 0.4);
+  background: var(--creme);
+}
+.logo {
+  display: flex;
+  gap: 30px;
+  height: 90%;
+  border-radius: 150%;
+  background-color: var(--vinho);
+}
+#botao {
+  display: flex;
+  background-color: var(--vinho);
+  border-radius: 20px;
+  padding: 15px 50px;
+  color: #ffff;
+  margin-right: 70px;
+  border: none;
+}
+body {
+  background-color: var(--marrom);
+}
+
+.titulo {
+  background-color: var(--vinho);
+  height: 700px;
+  width: 50%;
+  border-radius: 20px;
+  margin: 0 auto;
+  margin-top: 150px;
+  padding: 20px 30px;
+}
+
+.titulo h1 {
+  display: flex;
+  font-size: 36px;
+  color: var(--amarelo);
+  justify-content: center;
+  margin-bottom: 10px;
+}
+
+.titulo p {
+  font-size: 20px;
+  color: #ffff;
+  text-align: center;
+}
+
+.senha2 {
+  display: block;
+  width: 100%;
+  color: var(--vinho);
+  background-color: var(--cinza);
+  border: none;
+  border-radius: 15px;
+  padding: 14px;
+  font-size: 20px;
+  font-weight: bold;
+  margin-top: 24px;
+}
+
+#nome{
+font-size: 35px;
+border-radius: 20px;
+border: none;
+background-color: var(--cinza);
+
+}
+
+#senha2{
+font-size: 35px;
+border-radius: 20px;
+border: none;
+background-color: var(--cinza);
+
+}
+
+.cadado{
+margin: 50px;
+}

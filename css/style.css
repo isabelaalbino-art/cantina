@@ -29,20 +29,62 @@ header {
   display: flex;
   gap: 30px;
   height: 90%;
+  border-radius: 150%;
+  background-color: var(--vinho);
 }
 
 #menu {
   display: flex;
-  padding: 17px 70px;
+  padding: 15px 70px;
   position: relative;
   background-color: var(--vinho);
   border-radius: 20px;
+  gap: 15px;
+  margin-right: 50px;
 }
 
 #menu a {
   color: var(--creme);
   text-decoration: none;
-  font-size: 0.85rem;
-  font-weight: 500;
-  transition: color 0.3s;
+  font-size: 17px;
+  text-align: justify;
 }
+
+.hero {
+  background-color: var(--fundo);
+  position: relative;
+  padding: 75px 5% 35px 5%;
+  box-shadow: 4px 4px 12px rgba(160, 145, 125, 0.25), 
+                -4px -4px 12px rgba(255, 255, 255, 0.7);
+    border: 1px solid rgba(255, 255, 255, 0.5);
+}
+
+.hero-content h1 {
+  font-size: 25px;
+  margin-bottom: 30px;
+  background: var(--fundo);
+}
+
+.hero-content p {
+  font-size: 15px;
+  margin-bottom: 18px;
+  text-align: justify;
+}
+
+.card {
+  background-color: var(--creme);
+  color: var(--vinho);
+   border-radius: 14px;
+  padding: 10px 10px;
+  font-size: 10px;
+  text-align:center;
+  box-shadow:
+    5px 5px 15px rgba(0, 0, 0, 0.2),
+    -5px -5px 15px rgba(0, 0, 0, 0.2);
+  border: 1px solid rgba(255, 255, 255, 0.6);
+  width: 150px;
+  right: 100px;
+  margin-left: 1000px;
+}
+
+
