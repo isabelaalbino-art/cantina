@@ -1,4 +1,4 @@
-: :root{
+:root{
 --vinho: #663339
 --creme: #F5F0E5
 --fundo: #ECE2CC
@@ -20,14 +20,36 @@ display: flex;
 justify-content: space-between;
 align-items: center;
 height: 150px;
-background: var(--creme);
 backdrop-filter: blur(15px);
 -webkit-backdrop-filter: blur(20px);
 box-shadow:0 6px 6px rgb(0, 0, 0, 0.4);
+
 }
 
 .logo{
-width: 50%;
-    height: 50%;
+     display: flex;
+  gap: 30px;
+ height: 90%;
+
 }
+
+#menu{
+display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 5px 5%;
+    position: relative;
+    background-color: var(--vinho);
+
+}
+
+#menu a {
+text-decoration: none;
+color: var(--creme);
+
+  transition: 0.3s;
+
+
+}
+
 
