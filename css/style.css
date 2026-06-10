@@ -1,55 +1,48 @@
-:root{
---vinho: #663339
---creme: #F5F0E5
---fundo: #ECE2CC
---card: #6A363C
---card2: #39060A
---linear: #E0E0E0
-
+:root {
+  --vinho: #663339;
+  --creme: #f5f0e5;
+  --fundo: #ece2cc;
+  --card: #6a363c;
+  --card2: #39060a;
+  --linear: #e0e0e0;
 }
-* { 
-margin: 0;
-padding: 0;
-box-sizing: border-box;
-}
-
-header{
-position:sticky;
-top: 0;
-display: flex;
-justify-content: space-between;
-align-items: center;
-height: 150px;
-backdrop-filter: blur(15px);
--webkit-backdrop-filter: blur(20px);
-box-shadow:0 6px 6px rgb(0, 0, 0, 0.4);
-
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
 
-.logo{
-     display: flex;
+header {
+  position: sticky;
+  top: 0;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 150px;
+  backdrop-filter: blur(15px);
+  -webkit-backdrop-filter: blur(20px);
+  box-shadow: 0 6px 6px rgb(0, 0, 0, 0.4);
+  background: var(--creme);
+}
+
+.logo {
+  display: flex;
   gap: 30px;
- height: 90%;
-
+  height: 90%;
 }
 
-#menu{
-display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding: 5px 5%;
-    position: relative;
-    background-color: var(--vinho);
-
+#menu {
+  display: flex;
+  padding: 17px 70px;
+  position: relative;
+  background-color: var(--vinho);
+  border-radius: 20px;
 }
 
 #menu a {
-text-decoration: none;
-color: var(--creme);
-
-  transition: 0.3s;
-
-
+  color: var(--creme);
+  text-decoration: none;
+  font-size: 0.85rem;
+  font-weight: 500;
+  transition: color 0.3s;
 }
-
-
