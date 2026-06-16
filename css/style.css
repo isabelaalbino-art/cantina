@@ -1,3 +1,20 @@
+
+#menu{
+margin: 50px;
+padding: 50px;
+box-sizing: border-box;
+background: #663339;
+}
+
+
+ :root{
+--vinho: #663339;
+--creme: #F5F0E5;
+--fundo: #ECE2CC;
+--card: #6A363C;
+--card2: #39060A;
+--linear: #E0E0E0;
+
 :root {
   --vinho: #663339;
   --creme: #f5f0e5;
@@ -25,6 +42,8 @@ header {
   background: var(--creme);
 }
 
+.logo{
+background-color: var(--vinho)
 .logo {
   display: flex;
   gap: 30px;
@@ -86,5 +105,6 @@ header {
   right: 100px;
   margin-left: 1000px;
 }
+
 
 
