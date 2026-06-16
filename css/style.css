@@ -1,3 +1,8 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
 
 #menu{
 margin: 50px;
@@ -6,7 +11,6 @@ box-sizing: border-box;
 background: #663339;
 }
 
-
  :root{
 --vinho: #663339;
 --creme: #F5F0E5;
@@ -14,21 +18,8 @@ background: #663339;
 --card: #6A363C;
 --card2: #39060A;
 --linear: #E0E0E0;
-
-:root {
-  --vinho: #663339;
-  --creme: #f5f0e5;
-  --fundo: #ece2cc;
-  --card: #6a363c;
-  --card2: #39060a;
-  --linear: #e0e0e0;
-}
-* {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-}
-
+ }
+ 
 header {
   position: sticky;
   top: 0;
@@ -43,8 +34,7 @@ header {
 }
 
 .logo{
-background-color: var(--vinho)
-.logo {
+background-color: var(--vinho);
   display: flex;
   gap: 30px;
   height: 90%;
