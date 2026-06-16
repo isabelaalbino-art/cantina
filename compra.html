@@ -5,8 +5,10 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Cantina Senai-compra</title>
      <link rel="stylesheet" href="css/estilo.css">
+     
 </head>
 <body>
+
     <header>
         <div class="logo">
           <img src="img/foto-logo.png" class="foto-logo" alt="Logo">
@@ -27,13 +29,16 @@
 
     <!-- Compra -->
     <section>
-       
+
         <h2 class="COMPRA">COMPRA!</h2>
-        <div class="linha-divisoria"></div>
-        <div class="linha-divisoria"></div>
-   
-      <span class="carrinho">🛒</span>
      
+      <div class="compra-divider">
+  <span class="linha"></span>
+   <div class="carrinho">
+          <img src="img/bola-carrinho.png" class="foto-carrinho" alt="carrinho">
+        </div>
+  <span class="linha2"></span>
+  </div>
         
     </section>
 
@@ -49,9 +54,9 @@
         
         <div class="cardapio">
             <div class="categoria">
-                <span>--------------------</span>
-             <span class="titulo">Salgados Fritos</span>
-             <span>--------------------</span>
+                <div class="line"></div>
+                <div class="line2"></div>
+                <span class="titulo">Salgados Fritos</span>
             </div>
             
             <div class="item">
@@ -154,9 +159,9 @@
                 <!--SALGADOS ASSADOS-->
                 <section>
                       <div class="categoria">
-                        <span>--------------------</span>
+                       <div class="line3"></div>
                      <span class="titulo">Salgados Assados</span>
-                     <span>--------------------</span>
+                    <div class="line4"></div>
                     </div>
             
                     <div class="cardapio">
@@ -286,9 +291,9 @@
                 <!--DOCE-->
                 <section>
                      <div class="categoria">
-                        <span>--------------------</span>
+                      <div class="line5"></div>
                      <span class="titulo">Doces</span>
-                     <span>--------------------</span>
+                     <div class="line6"></div>
                     </div>
             
                     <div class="cardapio">
@@ -408,9 +413,10 @@
             
                 <section>
                     <div class="categoria">
-                        <span>--------------------</span>
-                     <span class="titulo">Sancuíches</span>
-                     <span>--------------------</span>
+                        <div class="line7"></div>
+                        <span class="titulo">Sancuíches</span>
+                        <div class="line8"></div>
+                     
                  
             
                     <div class="item">
@@ -442,9 +448,10 @@
                 <!-- BEBIDAS FRIAS -->
                 <section>
                      <div class="categoria">
-                        <span>--------------------</span>
-                     <span class="titulo">Bebidas Frias</span>
-                     <span>--------------------</span>
+                       <div class="line9"></div>
+                       <span class="titulo">Bebidas Frias</span>
+                       <div class="line10"></div>
+                     
                      
             
                      <div class="item">
@@ -591,9 +598,10 @@
                 <section>
             
                     <div class="categoria">
-                           <span>--------------------</span>
-                        <span class="titulo">Bebidas Frias</span>
-                        <span>--------------------</span>
+                         <div class="line11"></div>
+                         <span class="titulo">Bebidas Quentes</span>
+                         <div class="line11"></div>
+                    
             
                         <div class="item">
                             <span class="comida">Café Espresso</span>  
@@ -718,7 +726,8 @@
         <div class="finalizar">
           <p class="texto3">Confira seus itens e finalize a sua compra!</p>
           <div class="pedido-finalizar">
-              <button class="btn-finalizar">  🔒 Finalizar Pedido! </button>
+              <button class="btn-finalizar">  Finalizar Pedido! </button>
+              <p class="cadeado">🔒</p>
           </div>
 
         </div>        
@@ -728,39 +737,42 @@
     </section>
 
     <!-- FOOTER -->
-    <footer>
+    <footer id="footer">
         <div class="logo">
-            <img src="img/foto-logo.png"  class="foto-logo" alt="logo">
+            <img src="img/foto-logo.png"  class="foto-logo2" alt="logo">
         </div>
         
-        <p>Buffet e Cantina</p>
-        <span> Cantina oficial do SENAI Edward Sávio em Jaú/SP. Salgados, almoço, doces e bebidas com qualidade e carinho</span>
-        <p>Navegação</p>
-        <div>
-            <span class="texto-footer"> Home</span>
-            <span class="texto-footer">Doces</span>
-        </div>
+       <div class="coluna">
+     <p class="footer-titulo1">Buffet e Cantina</p>
+     <span class="descricao">Cantina oficial do SENAI Edward Sávio em Jaú/SP. Salgados, almoço, doces e bebidas com qualidade e carinho.</span>
+   </div>
 
-        <div>
-            <span class="texto-footer">Salgados Fritos</span>
-            <span class="texto-footer">Bebidas Frias</span>
-        </div>
+   <div class="coluna">
+    <p class="footer-titulo2">Navegação</p>
+    <div class="coluna-itens">
+      <span class="texto-footer">Home</span>
+      <span class="texto-footer">Doces</span>
+      <span class="texto-footer">Salgados Fritos</span>
+      <span class="texto-footer">Bebidas Frias</span>
+      <span class="texto-footer">Salgados Assados</span>
+      <span class="texto-footer">Bebidas Quentes</span>
+      <span class="texto-footer">Sanduíches</span>
+      <span class="texto-footer">Refeições</span>
+    </div>
+  </div>
 
-        <div>
-            <span class="texto-footer"> Salgados Assados</span>
-            <span class="texto-footer">Bebidas Quentes</span>
-        </div>
-        <div>
-            <span class="texto-footer"> Sanduiches</span>
-            <span class="texto-footer">Refeições</span>
-        </div>
+    <div class="coluna">
+    <p class="footer-titulo3">Contato</p>
+    <p class="texto-footer">📍 Rua Lions Clube, 240</p>
+    <p class="texto-footer">🏫 SENAI Edward Sávio</p>
+    <p class="texto-footer">📱 (14) 99110-8152</p>
+    </div>
 
-        <p>Contato</p>
-        <p class="texto-footer"> 📍 Rua Lions Clube, 240</p>
-        <p class="texto-footer"> 🏫 SENAI Edward Sávio</p>
-        <p class="texto-footer"> 📱 (14) 99110-8152</p>
-        
     </footer>
+
+
+
+
 <script src="js/script.js"></script>
 
 </body>
