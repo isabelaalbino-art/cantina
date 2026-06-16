@@ -1,44 +1,50 @@
 <!DOCTYPE html>
 <html lang="pt-br">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Tela do Administrador</title>
     <link rel="stylesheet" href="css/style2.css">
 </head>
+
 <body>
-    
+
     <!-- HEADER -->
-<header>
+    <header>
         <img src="img/logo cantina.png" class="logo">
-        <button id="botao"">Voltar para o site</button>
-</header>
+        <button id="botao">Voltar para o site</button>
+    </header>
 
 
-<div class="titulo">
-    <h1>Silvia Fest<h1>
-        <p>Digite a senha para acessar o painel de controle.</p>
-       
-
-        
-        <form>
-            <section class="form">
-                <p>Login</p>
-                <p><img src="img/homem.png" class="homem"></p>
-                <input type="text" id="nome"> 
-
-                <div class="senha">
-                <p class="S">Senha</p>
-                <input type="password" id="senha">
-                <p><img src="img/cadado.png" class="cadado"></p>
-                <button type="submit" class="senha2">Entrar</button>
-                </div>
-            </section>
-        </form>
-    </div>
+    <div class="titulo">
+        <h1>Silvia Fest<h1>
+                <p>Digite a senha para acessar o painel de controle.</p>
 
 
 
-<script src="js/script.js"></script>
+                <form>
+                    <div class="login">
+                        <p>Login:</p>
+                        <p><img src="img/homem.png" id="homem"></p>
+                        <input type="text" id="nome">
+                    </div>
+
+                    <div class="senha">
+                        <p>Senha:</p>
+                        <img src="img/cadado.png" id="cadeado">
+                        <input type="password" id="s">
+                    </div>
+                    <div class="button">
+                        <button type="submit" class="senha2">Entrar
+                        </button>
+                    </div>
+                </form>
+
+
+
+
+                <script src="js/script.js"></script>
 </body>
+
 </html>

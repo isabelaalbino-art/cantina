@@ -91,14 +91,12 @@ background-color: var(--cinza);
 
 }
 
-#senha2{
+#s{
+background-color: var(--cinza);
+border: none;
 font-size: 35px;
 border-radius: 20px;
-border: none;
-background-color: var(--cinza);
-
 }
 
-.cadado{
-margin: 50px;
-}
+
+
