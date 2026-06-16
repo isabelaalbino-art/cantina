@@ -6,7 +6,7 @@
     --card: #6A363C;
     --card2: #39060A;
     --linear: #E0E0E0;
-     --texto:#2c2416;
+     --texto:#000000;
      --amarelo:#D4AF37;
     
 }
@@ -285,7 +285,7 @@ display: flex;
 
 
 .card-dinheiro {
-  display: inline-flex;        /* deixa os 3 cards lado a lado */
+  display: inline-flex;       
   width: 400px;
   height: 50px;
   align-items: center;
@@ -311,7 +311,7 @@ display: flex;
    color: #663339;
    font-size: 30px;
    margin-top: 10px;
-    border-bottom: 1px solid var(--texto);
+    border-bottom: 1.5px solid var(--texto);
 
 
 }
@@ -349,17 +349,36 @@ display: flex;
 }
 
  
-.finalizar:hover {
-  background: var(--vinho);
-}
- 
 .finalizar .texto3 {
-  color: #fff;
-  font-size: 15px;
-  font-weight: 600;
+  color: #663339;
+  font-size: 30px;
+  font-weight: 10;
   margin: 0;
+   border-bottom: 1.5px solid var(--texto);
 }
 
+.btn-finalizar{
+  border: none;
+  color: var(--creme);
+  text-align: center;
+  background-color: var(--card);
+  font-size: 30px;
+
+
+}
+
+.pedido-finalizar{
+  
+  margin: 1rem auto 0;
+  background: var(--card);
+  border-radius: 10px;
+  padding: 14px 20px;
+  text-align: center;
+  cursor: pointer;
+  transition: background 0.15s;
+   width: 1500px;
+  height: 60px;
+}
 
 
 
