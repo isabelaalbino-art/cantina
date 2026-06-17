@@ -2,24 +2,30 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+  transition: all 0.3s ease-in-out;
+
 }
 
-#menu{
-margin: 50px;
-padding: 50px;
-box-sizing: border-box;
-background: #663339;
+html {
+  scroll-behavior: smooth;
 }
 
- :root{
---vinho: #663339;
---creme: #F5F0E5;
---fundo: #ECE2CC;
---card: #6A363C;
---card2: #39060A;
---linear: #E0E0E0;
- }
- 
+:root {
+  --vinho: #663339;
+  --creme: #f5f0e5;
+  --fundo: #ece2cc;
+  --card: #6a363c;
+  --card2: #39060a;
+  --linear: #e0e0e0;
+}
+
+#menu {
+  margin: 50px;
+  padding: 50px;
+  box-sizing: border-box;
+  background: #663339;
+}
+
 header {
   position: sticky;
   top: 0;
@@ -33,18 +39,20 @@ header {
   background: var(--creme);
 }
 
-.logo{
-background-color: var(--vinho);
+.logo {
   display: flex;
   gap: 30px;
-  height: 90%;
+  height: 100%;
   border-radius: 150%;
   background-color: var(--vinho);
+  position: relative;
+  top: 50px;
+  margin: 20px;
 }
 
 #menu {
   display: flex;
-  padding: 15px 70px;
+  padding: 15px 50px;
   position: relative;
   background-color: var(--vinho);
   border-radius: 20px;
@@ -62,39 +70,84 @@ background-color: var(--vinho);
 .hero {
   background-color: var(--fundo);
   position: relative;
-  padding: 75px 5% 35px 5%;
-  box-shadow: 4px 4px 12px rgba(160, 145, 125, 0.25), 
-                -4px -4px 12px rgba(255, 255, 255, 0.7);
-    border: 1px solid rgba(255, 255, 255, 0.5);
+  padding: 60px 3px 35px 5px;
+
+  display: flex;
+  justify-content: center;
+  gap: 10em;
 }
 
+.hero-content{
+
+
+}
+
+
 .hero-content h1 {
-  font-size: 25px;
-  margin-bottom: 30px;
+  font-size: 35px;
+  margin-bottom: 40px;
   background: var(--fundo);
 }
 
 .hero-content p {
   font-size: 15px;
-  margin-bottom: 18px;
+  margin-bottom: 15px;
   text-align: justify;
 }
 
+.destaques {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+}
+
 .card {
+  background: var(--creme);
+  width: 220px;
+  height: 100px;
+  border: none;
+  border-radius: 16px;
+  padding: 28px 20px;
+  text-align: center;
+  box-shadow: 0px 4px 16px rgba(0, 0, 0, 0.08);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  margin-bottom: 40px;
+}
+
+.click {
+  cursor: pointer;
+}
+
+.click:hover {
+  transform: scale(1.1);
+}
+/*.card {
   background-color: var(--creme);
   color: var(--vinho);
    border-radius: 14px;
-  padding: 10px 10px;
-  font-size: 10px;
   text-align:center;
-  box-shadow:
-    5px 5px 15px rgba(0, 0, 0, 0.2),
-    -5px -5px 15px rgba(0, 0, 0, 0.2);
-  border: 1px solid rgba(255, 255, 255, 0.6);
-  width: 150px;
-  right: 100px;
-  margin-left: 1000px;
+   margin-bottom: 20px;
+   position: relative;
+   width: auto;
+  padding: 0;
+  display: grid;
+  gap: 16px;
+}*/
+
+/*box-shadow:
+  5px 5px 15px rgba(0, 0, 0, 0.2),
+  -5px -5px 15px rgba(0, 0, 0, 0.2);
+border: 1px solid rgba(255, 255, 255, 0.6);*/
+
+
+.inicio{
+font-size: 30px;
+background-color: var(--creme);
+text-align: center;
 }
 
-
-
+.inicio p{
+color: var(--vinho);
+}
