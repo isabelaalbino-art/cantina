@@ -17,8 +17,7 @@ html {
   --card2: #39060a;
   --linear: #e0e0e0;
   --cardapio: #482227;
-  --cardapio2: #773D43;
-
+  --cardapio2: #773d43;
 }
 
 header {
@@ -168,28 +167,97 @@ border: 1px solid rgba(255, 255, 255, 0.6);*/
   height: 60px;
 }
 
-
 /* ----------------------------------------------------*/
 
-
-.cardapio-completo{
-background: linear-gradient(135deg, var(--cardapio) 0%, var(--cardapio2) 100%);
-
+.cardapio-completo {
+  background: linear-gradient(
+    135deg,
+    var(--cardapio) 0%,
+    var(--cardapio2) 100%
+  );
 }
 
-.titulo-categoria{
-color: #ffff;
-font-size: 30px;
-text-align: center;
-
+.titulo-categoria {
+  color: #ffff;
+  font-size: 30px;
+  text-align: center;
+  margin-bottom: 48px;
 }
 
 .categoria-bloco {
-  margin-bottom: 56px; /*  espaçamento externo na parte inferior de um elemento */
- background: var(--creme);
- border-radius: 20px;
+  margin-bottom: 40px; /*  espaçamento externo na parte inferior de um elemento */
+  padding: 48px;
 }
 
-.itens{
+.itens {
+  display: flex;
+  justify-content: space-evenly;
+  margin-bottom: 15px;
+}
 
+.item-card {
+  text-decoration: none;
+  color: black;
+  font-size: 20px;
+  background: var(--creme);
+  border-radius: 25px;
+  padding: 15px 25px;
+  box-shadow: 0px 6px 12px rgba(0, 0, 0, 0.4);
+  width: 400px;
+  height: 60px;
+  display: flex;
+  justify-content: space-between;
+  margin: 10px;
+  align-items: center;
+}
+.preco {
+  color: var(--vinho);
+}
+
+.cardapio-completo {
+  background-image: url("../img/tela.png");
+  background-size: cover;
+  border: var(--vinho) solid 3px;
+}
+
+.btn-pedido{
+background: linear-gradient(
+    135deg,
+    var(--cardapio) 0%,
+    var(--cardapio2) 100%
+  );
+font-size: 30px;
+text-decoration: none;
+color: #ffff;
+font-weight: 700;
+border-radius: 20px;
+  display: flex;
+  justify-content: center; /* centraliza horizontalmente */
+    align-items: center;     /* centraliza verticalmente */
+      width: 600px;
+    height: 100px;
+    margin-top: 20px;
+}
+
+.btn{
+background: var(--creme);
+height: 150px;
+border: 2px solid var(--vinho);
+}
+
+.almoco-completo {
+    background: #F7F3EA;
+    padding: 40px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 50px;
+}
+
+.cardapio {
+    width: 100%;
+    text-align: center;
+    font-size: 3rem;
+    color: #4E222A;
+    margin-bottom: 40px;
 }
