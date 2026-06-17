@@ -1,484 +1,601 @@
 <!DOCTYPE html>
 <html lang="pt-br">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Cantina SENAI- Área do Administrador</title>
+    <link rel="stylesheet" href="css/estilo2.css">
 </head>
+
 <body>
 
     <header>
         <div class="logo">
-            <img src="img/logo cantina.png" alt="logo">
+            <img src="img/foto-logo.png" class="foto-logo" alt="foto-logo">
         </div>
 
     </header>
 
     <div class="adm">
-        <p> 👤 Área do Administrador</p>
-        <p>Gerenciar Cardápio</p>
+        <p class="adm-text"> 👤 Área do Administrador</p>
+        <div class="linha"></div>
+        <p class="adm-text2">Gerenciar Cardápio</p>
     </div>
 
 
-<!--ABA DE PESQUISA-->
-    <section>
-        <p> 🔍</p>
+    <!--ABA DE PESQUISA-->
+    <section id="pesquisa">
+        <p class="lupa"> 🔍</p>
         <input class="text">
     </section>
 
-<!--CENTRO-->
-<section id="centro">
-        <div class="superior">
+    <!--CENTRO-->
+    <section id="parte-central" class="centro">
+
+        <div class="superior creme w100">
             <span>Nome</span>
             <span>Categoria</span>
             <span>Preço</span>
             <span>Ação</span>
-
         </div>
-
+ <div class="espaco"></div>
         <div class="barra-item">
             <span>Coxinha</span>
             <span>Salgado Frito</span>
-            <span>R$ 7,00</span>
-            <button class="btn-editar">Editar</button>
-            <button class="btn-excluir">Excluir</button>
-        
+            <span class="preco">R$ 7,00</span>
+            <div class="botoes">
+                <button class="btn-editar">Editar</button>
+                <button class="btn-excluir">Excluir</button>
+            </div>
         </div>
-
+        <div class="espaco"></div>
 
         <div class="barra-item">
-    <span>Croquete de Carne</span>
-    <span>Salgado Frito</span>
-    <span>R$ 7,00</span>
-    <button class="btn-editar">Editar</button>
-    <button class="btn-excluir">Excluir</button>
-</div>
+            <span>Croquete de Carne</span>
+            <span>Salgado Frito</span>
+            <span class="preco">R$ 7,00</span>
+            <div class="botoes">
+                <button class="btn-editar">Editar</button>
+                <button class="btn-excluir">Excluir</button>
+            </div>
+        </div>
+ <div class="espaco"></div>
+        <div class="barra-item">
+            <span>Croque Milho com Queijo</span>
+            <span>Salgado Frito</span>
+            <span class="preco">R$ 7,00</span>
+         <div class="botoes">
+                <button class="btn-editar">Editar</button>
+                <button class="btn-excluir">Excluir</button>
+            </div>
+        </div>
+ <div class="espaco"></div>
+        <div class="barra-item">
+            <span>Croquete Salsicha com Queijo</span>
+            <span>Salgado Frito</span>
+            <span  class="preco">R$ 7,00</span>
+            <div class="botoes">
+                <button class="btn-editar">Editar</button>
+                <button class="btn-excluir">Excluir</button>
+            </div>
+        </div>
+ <div class="espaco"></div>
+        <div class="barra-item">
+            <span>Espeto Frango</span>
+            <span>Salgado Frito</span>
+            <span class="preco">R$ 7,00</span>
+        <div class="botoes">
+                <button class="btn-editar">Editar</button>
+                <button class="btn-excluir">Excluir</button>
+            </div>
+        </div>
+ <div class="espaco"></div>
+        <div class="barra-item">
+            <span>Kibe Carne</span>
+            <span>Salgado Frito</span>
+            <span class="preco">R$ 7,00</span>
+            <div class="botoes">
+                <button class="btn-editar">Editar</button>
+                <button class="btn-excluir">Excluir</button>
+            </div>
+        </div>
+ <div class="espaco"></div>
+        <div class="barra-item">
+            <span>Kibe Requeijão</span>
+            <span>Salgado Frito</span>
+            <span class="preco">R$ 7,00</span>
+        <div class="botoes">
+                <button class="btn-editar">Editar</button>
+                <button class="btn-excluir">Excluir</button>
+            </div>
+        </div>
+ <div class="espaco"></div>
+        <div class="barra-item">
+            <span>Risóles Presunto e Queijo</span>
+            <span>Salgado Frito</span>
+            <span class="preco">R$ 7,00</span>
+            <div class="botoes">
+                <button class="btn-editar">Editar</button>
+                <button class="btn-excluir">Excluir</button>
+            </div>
+        </div>
+ <div class="espaco"></div>
+        <div class="barra-item">
+            <span>Bauru Presunto e Queijo</span>
+            <span>Salgado Assado</span>
+            <span class="preco">R$ 7,00</span>
+          <div class="botoes">
+                <button class="btn-editar">Editar</button>
+                <button class="btn-excluir">Excluir</button>
+            </div>
+        </div>
+ <div class="espaco"></div>
+        <div class="barra-item">
+            <span>Baguete Calabresa</span>
+            <span>Salgado Assado</span>
+            <span class="preco">R$ 7,00</span>
+            <div class="botoes">
+                <button class="btn-editar">Editar</button>
+                <button class="btn-excluir">Excluir</button>
+            </div>
+        </div>
+ <div class="espaco"></div>
+        <div class="barra-item">
+            <span>Pão de Queijo</span>
+            <span>Salgado Assado</span>
+            <span class="preco">R$ 4,50</span>
+            <div class="botoes">
+                <button class="btn-editar">Editar</button>
+                <button class="btn-excluir">Excluir</button>
+            </div>
+        </div>
+ <div class="espaco"></div>
+        <div class="barra-item">
+            <span>Esfirra Carne com Bacon</span>
+            <span>Salgado Assado</span>
+            <span class="preco">R$ 7,00</span>
+            <div class="botoes">
+                <button class="btn-editar">Editar</button>
+                <button class="btn-excluir">Excluir</button>
+            </div>
+        </div>
+ <div class="espaco"></div>
+        <div class="barra-item">
+            <span>Esfirra Carne</span>
+            <span>Salgado Assado</span>
+            <span class="preco">R$ 7,00</span>
+          <div class="botoes">
+                <button class="btn-editar">Editar</button>
+                <button class="btn-excluir">Excluir</button>
+            </div>
+        </div>
+ <div class="espaco"></div>
+        <div class="barra-item">
+            <span>Esfirra Frango</span>
+            <span>Salgado Assado</span>
+            <span class="preco">R$ 7,00</span>
+           <div class="botoes">
+                <button class="btn-editar">Editar</button>
+                <button class="btn-excluir">Excluir</button>
+            </div>
+        </div>
+ <div class="espaco"></div>
+        <div class="barra-item">
+            <span>Hamburguer Cheddar</span>
+            <span>Salgado Assado</span>
+            <span class="preco">R$ 7,00</span>
+            <div class="botoes">
+                <button class="btn-editar">Editar</button>
+                <button class="btn-excluir">Excluir</button>
+            </div>
+        </div>
+ <div class="espaco"></div>
+        <div class="barra-item">
+            <span>Pão de Batata Calabresa</span>
+            <span>Salgado Assado</span>
+            <span class="preco">R$ 7,00</span>
+            <div class="botoes">
+                <button class="btn-editar">Editar</button>
+                <button class="btn-excluir">Excluir</button>
+            </div>
+        </div>
+ <div class="espaco"></div>
+        <div class="barra-item">
+            <span>Pão de Batata Requeijão</span>
+            <span>Salgado Assado</span>
+            <span class="preco">R$ 7,00</span>
+            <div class="botoes">
+                <button class="btn-editar">Editar</button>
+                <button class="btn-excluir">Excluir</button>
+            </div>
+        </div>
+ <div class="espaco"></div>
+        <div class="barra-item">
+            <span>Pão de Batata Frango</span>
+            <span>Salgado Assado</span>
+            <span class="preco">R$ 7,00</span>
+            <div class="botoes">
+                <button class="btn-editar">Editar</button>
+                <button class="btn-excluir">Excluir</button>
+            </div>
+        </div>
+ <div class="espaco"></div>
+        <div class="barra-item">
+            <span>Bolo de Pote</span>
+            <span>Doce</span>
+            <span class="preco">R$ 8,00</span>
+             <div class="botoes">
+                <button class="btn-editar">Editar</button>
+                <button class="btn-excluir">Excluir</button>
+            </div>
+           
+        </div>
+ <div class="espaco"></div>
+        <div class="barra-item">
+            <span>Bolo Pedaço</span>
+            <span>Doce</span>
+            <span class="preco">R$ 5,00</span>
+            <div class="botoes">
+                <button class="btn-editar">Editar</button>
+                <button class="btn-excluir">Excluir</button>
+            </div>
+        </div>
+ <div class="espaco"></div>
+        <div class="barra-item">
+            <span>Cone Trufado</span>
+            <span>Doce</span>
+            <span class="preco">R$ 7,00</span>
+           <div class="botoes">
+                <button class="btn-editar">Editar</button>
+                <button class="btn-excluir">Excluir</button>
+            </div>
+        </div>
+ <div class="espaco"></div>
+        <div class="barra-item">
+            <span>Crossaint Chocolate</span>
+            <span>Doce</span>
+            <span class="preco">R$ 8,00</span>
+            <div class="botoes">
+                <button class="btn-editar">Editar</button>
+                <button class="btn-excluir">Excluir</button>
+            </div>
+        </div>
+ <div class="espaco"></div>
+        <div class="barra-item">
+            <span>Pão de Mel</span>
+            <span>Doce</span>
+            <span class="preco">R$ 7,00</span>
+            <div class="botoes">
+                <button class="btn-editar">Editar</button>
+                <button class="btn-excluir">Excluir</button>
+            </div>
+        </div>
+ <div class="espaco"></div>
+        <div class="barra-item">
+            <span>Palha Italiana</span>
+            <span>Doce</span>
+            <span class="preco">R$ 7,00</span>
+          <div class="botoes">
+                <button class="btn-editar">Editar</button>
+                <button class="btn-excluir">Excluir</button>
+            </div>
+        </div>
+ <div class="espaco"></div>
+        <div class="barra-item">
+            <span>Tortas</span>
+            <span>Doce</span>
+            <span class="preco">R$ 8,00</span>
+            <div class="botoes">
+                <button class="btn-editar">Editar</button>
+                <button class="btn-excluir">Excluir</button>
+            </div>
+        </div>
+ <div class="espaco"></div>
+        <div class="barra-item">
+            <span>Brownie</span>
+            <span>Doce</span>
+            <span class="preco">R$ 7,00</span>
+           <div class="botoes">
+                <button class="btn-editar">Editar</button>
+                <button class="btn-excluir">Excluir</button>
+            </div>
+        </div>
+ <div class="espaco"></div>
+        <div class="barra-item">
+            <span>Brigadeiro</span>
+            <span>Doce</span>
+            <span class="preco">R$ 5,00</span>
+          <div class="botoes">
+                <button class="btn-editar">Editar</button>
+                <button class="btn-excluir">Excluir</button>
+            </div>
+        </div>
+ <div class="espaco"></div>
+        <div class="barra-item">
+            <span>Burrito</span>
+            <span>Hamburguer</span>
+            <span class="preco">R$ 7,00</span>
+     <div class="botoes">
+                <button class="btn-editar">Editar</button>
+                <button class="btn-excluir">Excluir</button>
+            </div>
+        </div>
+ <div class="espaco"></div>
+        <div class="barra-item">
+            <span>Pão Sírio</span>
+            <span>Hamburguer</span>
+            <span class="preco">R$ 7,00</span>
+             <div class="botoes">
+                <button class="btn-editar">Editar</button>
+                <button class="btn-excluir">Excluir</button>
+            </div>
+        </div>
+ <div class="espaco"></div>
+        <div class="barra-item">
+            <span>Água Mineral</span>
+            <span>Bebidas Frias</span>
+            <span class="preco">R$ 2,50</span>
+             <div class="botoes">
+                <button class="btn-editar">Editar</button>
+                <button class="btn-excluir">Excluir</button>
+            </div>
+        </div>
+ <div class="espaco"></div>
+        <div class="barra-item">
+            <span>Água com Gás</span>
+            <span>Bebidas Frias</span>
+            <span class="preco">R$ 3,00</span>
+             <div class="botoes">
+                <button class="btn-editar">Editar</button>
+                <button class="btn-excluir">Excluir</button>
+            </div>
+        </div>
+ <div class="espaco"></div>
+        <div class="barra-item">
+            <span>Coca-Cola 1 litro</span>
+            <span>Bebidas Frias</span>
+            <span class="preco">R$ 9,50</span>
+            <div class="botoes">
+                <button class="btn-editar">Editar</button>
+                <button class="btn-excluir">Excluir</button>
+            </div>
+        </div>
+ <div class="espaco"></div>
+        <div class="barra-item">
+            <span>Coca-Cola 2 litros</span>
+            <span>Bebidas Frias</span>
+            <span class="preco">R$ 14,00</span>
+            <div class="botoes">
+                <button class="btn-editar">Editar</button>
+                <button class="btn-excluir">Excluir</button>
+            </div>
+        </div>
+ <div class="espaco"></div>
+        <div class="barra-item">
+            <span>Refrigerante 250ml</span>
+            <span>Bebidas Frias</span>
+            <span class="preco">R$ 3,00</span>
+            <div class="botoes">
+                <button class="btn-editar">Editar</button>
+                <button class="btn-excluir">Excluir</button>
+            </div>
+        </div>
+ <div class="espaco"></div>
+        <div class="barra-item">
+            <span>Refrigerante 350ml</span>
+            <span>Bebidas Frias</span>
+            <span class="preco">R$ 6,00</span>
+           <div class="botoes">
+                <button class="btn-editar">Editar</button>
+                <button class="btn-excluir">Excluir</button>
+            </div>
+        </div>
+ <div class="espaco"></div>
+        <div class="barra-item">
+            <span>Refrigerante 350ml</span>
+            <span>Bebidas Frias</span>
+            <span class="preco">R$ 6,00</span>
+          <div class="botoes">
+                <button class="btn-editar">Editar</button>
+                <button class="btn-excluir">Excluir</button>
+            </div>
+        </div>
+ <div class="espaco"></div>
+        <div class="barra-item">
+            <span>Refrigerante 350ml</span>
+            <span>Bebidas Frias</span>
+            <span class="preco">R$ 6,00</span>
+           <div class="botoes">
+                <button class="btn-editar">Editar</button>
+                <button class="btn-excluir">Excluir</button>
+            </div>
+        </div>
+ <div class="espaco"></div>
+        <div class="barra-item">
+            <span>Refrigerante 600ml</span>
+            <span>Bebidas Frias</span>
+            <span class="preco">R$ 6,00</span>
+           <div class="botoes">
+                <button class="btn-editar">Editar</button>
+                <button class="btn-excluir">Excluir</button>
+            </div>
+        </div>
+ <div class="espaco"></div>
+        <div class="barra-item">
+            <span>Refrigerante XV 2 litros</span>
+            <span>Bebidas Frias</span>
+            <span class="preco">R$ 7,00</span>
+            <div class="botoes">
+                <button class="btn-editar">Editar</button>
+                <button class="btn-excluir">Excluir</button>
+            </div>
+        </div>
+ <div class="espaco"></div>
+        <div class="barra-item">
+            <span>Suco Del Valle 500ml</span>
+            <span>Bebidas Frias</span>
+            <span class="preco">R$ 5,00</span>
+           <div class="botoes">
+                <button class="btn-editar">Editar</button>
+                <button class="btn-excluir">Excluir</button>
+            </div>
+        </div>
+ <div class="espaco"></div>
+        <div class="barra-item">
+            <span>Suco Frupic 450ml</span>
+            <span>Bebidas Frias</span>
+            <span class="preco">R$ 3,00</span>
+           <div class="botoes">
+                <button class="btn-editar">Editar</button>
+                <button class="btn-excluir">Excluir</button>
+            </div>
+        </div>
+ <div class="espaco"></div>
+        <div class="barra-item">
+            <span>Toddynho</span>
+            <span>Bebidas Frias</span>
+            <span class="preco">R$ 4,00</span>
+            <div class="botoes">
+                <button class="btn-editar">Editar</button>
+                <button class="btn-excluir">Excluir</button>
+            </div>
+        </div>
+ <div class="espaco"></div>
+        <div class="barra-item">
+            <span>Café Espresso</span>
+            <span>Bebidas Quentes</span>
+            <span class="preco">R$ 3,00</span>
+            <div class="botoes">
+                <button class="btn-editar">Editar</button>
+                <button class="btn-excluir">Excluir</button>
+            </div>
+        </div>
+ <div class="espaco"></div>
+        <div class="barra-item">
+            <span>Café com Leite</span>
+            <span>Bebidas Quentes</span>
+            <span class="preco">R$ 3,00</span>
+            <div class="botoes">
+                <button class="btn-editar">Editar</button>
+                <button class="btn-excluir">Excluir</button>
+            </div>
+        </div>
+ <div class="espaco"></div>
+        <div class="barra-item">
+            <span>Capuccino</span>
+            <span>Bebidas Quentes</span>
+            <span class="preco">R$ 3,00</span>
+            <div class="botoes">
+                <button class="btn-editar">Editar</button>
+                <button class="btn-excluir">Excluir</button>
+            </div>
+        </div>
+ <div class="espaco"></div>
+        <div class="barra-item">
+            <span>Capuccino com Canela</span>
+            <span>Bebidas Quentes</span>
+            <span class="preco">R$ 3,00</span>
+           <div class="botoes">
+                <button class="btn-editar">Editar</button>
+                <button class="btn-excluir">Excluir</button>
+            </div>
+        </div>
+ <div class="espaco"></div>
+        <div class="barra-item">
+            <span>Leite com Chocolate</span>
+            <span>Bebidas Quentes</span>
+            <span class="preco">R$ 3,00</span>
+           <div class="botoes">
+                <button class="btn-editar">Editar</button>
+                <button class="btn-excluir">Excluir</button>
+            </div>
+        </div>
+ <div class="espaco"></div>
+        <div class="barra-item">
+            <span>Mocaccino</span>
+            <span>Bebidas Quentes</span>
+            <span class="preco">R$ 3,00</span>
+          <div class="botoes">
+                <button class="btn-editar">Editar</button>
+                <button class="btn-excluir">Excluir</button>
+            </div>
+        </div>
+ <div class="espaco"></div>
 
-<div class="barra-item">
-    <span>Croque Milho com Queijo</span>
-    <span>Salgado Frito</span>
-    <span>R$ 7,00</span>
-    <button class="btn-editar">Editar</button>
-    <button class="btn-excluir">Excluir</button>
-</div>
-
-<div class="barra-item">
-    <span>Croquete Salsicha com Queijo</span>
-    <span>Salgado Frito</span>
-    <span>R$ 7,00</span>
-    <button class="btn-editar">Editar</button>
-    <button class="btn-excluir">Excluir</button>
-</div>
-
-<div class="barra-item">
-    <span>Espeto Frango</span>
-    <span>Salgado Frito</span>
-    <span>R$ 7,00</span>
-    <button class="btn-editar">Editar</button>
-    <button class="btn-excluir">Excluir</button>
-</div>
-
-<div class="barra-item">
-    <span>Kibe Carne</span>
-    <span>Salgado Frito</span>
-    <span>R$ 7,00</span>
-    <button class="btn-editar">Editar</button>
-    <button class="btn-excluir">Excluir</button>
-</div>
-
-<div class="barra-item">
-    <span>Kibe Requeijão</span>
-    <span>Salgado Frito</span>
-    <span>R$ 7,00</span>
-    <button class="btn-editar">Editar</button>
-    <button class="btn-excluir">Excluir</button>
-</div>
-
-<div class="barra-item">
-    <span>Risóles Presunto e Queijo</span>
-    <span>Salgado Frito</span>
-    <span>R$ 7,00</span>
-    <button class="btn-editar">Editar</button>
-    <button class="btn-excluir">Excluir</button>
-</div>
-
-<div class="barra-item">
-    <span>Bauru Presunto e Queijo</span>
-    <span>Salgado Assado</span>
-    <span>R$ 7,00</span>
-    <button class="btn-editar">Editar</button>
-    <button class="btn-excluir">Excluir</button>
-</div>
-
-<div class="barra-item">
-    <span>Baguete Calabresa</span>
-    <span>Salgado Assado</span>
-    <span>R$ 7,00</span>
-    <button class="btn-editar">Editar</button>
-    <button class="btn-excluir">Excluir</button>
-</div>
-
-<div class="barra-item">
-    <span>Pão de Queijo</span>
-    <span>Salgado Assado</span>
-    <span>R$ 4,50</span>
-    <button class="btn-editar">Editar</button>
-    <button class="btn-excluir">Excluir</button>
-</div>
-
-<div class="barra-item">
-    <span>Esfirra Carne com Bacon</span>
-    <span>Salgado Assado</span>
-    <span>R$ 7,00</span>
-    <button class="btn-editar">Editar</button>
-    <button class="btn-excluir">Excluir</button>
-</div>
-
-<div class="barra-item">
-    <span>Esfirra Carne</span>
-    <span>Salgado Assado</span>
-    <span>R$ 7,00</span>
-    <button class="btn-editar">Editar</button>
-    <button class="btn-excluir">Excluir</button>
-</div>
-
-<div class="barra-item">
-    <span>Esfirra Frango</span>
-    <span>Salgado Assado</span>
-    <span>R$ 7,00</span>
-    <button class="btn-editar">Editar</button>
-    <button class="btn-excluir">Excluir</button>
-</div>
-
-<div class="barra-item">
-    <span>Hamburguer Cheddar</span>
-    <span>Salgado Assado</span>
-    <span>R$ 7,00</span>
-    <button class="btn-editar">Editar</button>
-    <button class="btn-excluir">Excluir</button>
-</div>
-
-<div class="barra-item">
-    <span>Pão de Batata Calabresa</span>
-    <span>Salgado Assado</span>
-    <span>R$ 7,00</span>
-    <button class="btn-editar">Editar</button>
-    <button class="btn-excluir">Excluir</button>
-</div>
-
-<div class="barra-item">
-    <span>Pão de Batata Requeijão</span>
-    <span>Salgado Assado</span>
-    <span>R$ 7,00</span>
-    <button class="btn-editar">Editar</button>
-    <button class="btn-excluir">Excluir</button>
-</div>
-
-<div class="barra-item">
-    <span>Pão de Batata Frango</span>
-    <span>Salgado Assado</span>
-    <span>R$ 7,00</span>
-    <button class="btn-editar">Editar</button>
-    <button class="btn-excluir">Excluir</button>
-</div>
-
-<div class="barra-item">
-    <span>Bolo de Pote</span>
-    <span>Doce</span>
-    <span>R$ 8,00</span>
-    <button class="btn-editar">Editar</button>
-    <button class="btn-excluir">Excluir</button>
-</div>
-
-<div class="barra-item">
-    <span>Bolo Pedaço</span>
-    <span>Doce</span>
-    <span>R$ 5,00</span>
-    <button class="btn-editar">Editar</button>
-    <button class="btn-excluir">Excluir</button>
-</div>
-
- <div class="barra-item">
-     <span>Cone Trufado</span>
-    <span>Doce</span>
-    <span>R$ 7,00</span>
-    <button class="btn-editar">Editar</button>
-    <button class="btn-excluir">Excluir</button>
-</div>
-
-<div class="barra-item">
-    <span>Crossaint Chocolate</span>
-    <span>Doce</span>
-    <span>R$ 8,00</span>
-    <button class="btn-editar">Editar</button>
-    <button class="btn-excluir">Excluir</button>
-</div>
-
-<div class="barra-item">
-    <span>Pão de Mel</span>
-    <span>Doce</span>
-    <span>R$ 7,00</span>
-    <button class="btn-editar">Editar</button>
-    <button class="btn-excluir">Excluir</button>
-</div>
-
-<div class="barra-item">
-    <span>Palha Italiana</span>
-    <span>Doce</span>
-    <span>R$ 7,00</span>
-    <button class="btn-editar">Editar</button>
-    <button class="btn-excluir">Excluir</button>
-</div>
-
-<div class="barra-item">
-    <span>Tortas</span>
-    <span>Doce</span>
-    <span>R$ 8,00</span>
-    <button class="btn-editar">Editar</button>
-    <button class="btn-excluir">Excluir</button>
-</div>
-
-<div class="barra-item">
-    <span>Brownie</span>
-    <span>Doce</span>
-    <span>R$ 7,00</span>
-    <button class="btn-editar">Editar</button>
-    <button class="btn-excluir">Excluir</button>
-</div>
-
-<div class="barra-item">
-    <span>Brigadeiro</span>
-    <span>Doce</span>
-    <span>R$ 5,00</span>
-    <button class="btn-editar">Editar</button>
-    <button class="btn-excluir">Excluir</button>
-</div>
-
-<div class="barra-item">
-    <span>Burrito</span>
-    <span>Hamburguer</span>
-    <span>R$ 7,00</span>
-    <button class="btn-editar">Editar</button>
-    <button class="btn-excluir">Excluir</button>
-</div>
-
-<div class="barra-item">
-    <span>Pão Sírio</span>
-    <span>Hamburguer</span>
-    <span>R$ 7,00</span>
-    <button class="btn-editar">Editar</button>
-    <button class="btn-excluir">Excluir</button>
-</div>
-
-<div class="barra-item">
-    <span>Água Mineral</span>
-    <span>Bebidas Frias</span>
-    <span>R$ 2,50</span>
-    <button class="btn-editar">Editar</button>
-    <button class="btn-excluir">Excluir</button>
-</div>
-
-<div class="barra-item">
-    <span>Água com Gás</span>
-    <span>Bebidas Frias</span>
-    <span>R$ 3,00</span>
-    <button class="btn-editar">Editar</button>
-    <button class="btn-excluir">Excluir</button>
-</div>
-
-<div class="barra-item">
-    <span>Coca-Cola 1 litro</span>
-    <span>Bebidas Frias</span>
-    <span>R$ 9,50</span>
-    <button class="btn-editar">Editar</button>
-    <button class="btn-excluir">Excluir</button>
-</div>
-
-<div class="barra-item">
-    <span>Coca-Cola 2 litros</span>
-    <span>Bebidas Frias</span>
-    <span>R$ 14,00</span>
-    <button class="btn-editar">Editar</button>
-    <button class="btn-excluir">Excluir</button>
-</div>
-
-<div class="barra-item">
-    <span>Refrigerante 250ml</span>
-    <span>Bebidas Frias</span>
-    <span>R$ 3,00</span>
-    <button class="btn-editar">Editar</button>
-    <button class="btn-excluir">Excluir</button>
-</div>
-
-<div class="barra-item">
-    <span>Refrigerante 350ml</span>
-    <span>Bebidas Frias</span>
-    <span>R$ 6,00</span>
-    <button class="btn-editar">Editar</button>
-    <button class="btn-excluir">Excluir</button>
-</div>
-
-<div class="barra-item">
-    <span>Refrigerante 350ml</span>
-    <span>Bebidas Frias</span>
-    <span>R$ 6,00</span>
-    <button class="btn-editar">Editar</button>
-    <button class="btn-excluir">Excluir</button>
-</div>
-
-<div class="barra-item">
-    <span>Refrigerante 350ml</span>
-    <span>Bebidas Frias</span>
-    <span>R$ 6,00</span>
-    <button class="btn-editar">Editar</button>
-    <button class="btn-excluir">Excluir</button>
-</div>
-
-<div class="barra-item">
-    <span>Refrigerante 600ml</span>
-    <span>Bebidas Frias</span>
-    <span>R$ 6,00</span>
-    <button class="btn-editar">Editar</button>
-    <button class="btn-excluir">Excluir</button>
-</div>
-
-<div class="barra-item">
-    <span>Refrigerante XV 2 litros</span>
-    <span>Bebidas Frias</span>
-    <span>R$ 7,00</span>
-    <button class="btn-editar">Editar</button>
-    <button class="btn-excluir">Excluir</button>
-</div>
-
-<div class="barra-item">
-    <span>Suco Del Valle 500ml</span>
-    <span>Bebidas Frias</span>
-    <span>R$ 5,00</span>
-    <button class="btn-editar">Editar</button>
-    <button class="btn-excluir">Excluir</button>
-</div>
-
-<div class="barra-item">
-    <span>Suco Frupic 450ml</span>
-    <span>Bebidas Frias</span>
-    <span>R$ 3,00</span>
-    <button class="btn-editar">Editar</button>
-    <button class="btn-excluir">Excluir</button>
-</div>
-
-<div class="barra-item">
-    <span>Toddynho</span>
-    <span>Bebidas Frias</span>
-    <span>R$ 4,00</span>
-    <button class="btn-editar">Editar</button>
-    <button class="btn-excluir">Excluir</button>
-</div>
-
-<div class="barra-item">
-    <span>Café Espresso</span>
-    <span>Bebidas Quentes</span>
-    <span>R$ 3,00</span>
-    <button class="btn-editar">Editar</button>
-    <button class="btn-excluir">Excluir</button>
-</div>
-
-<div class="barra-item">
-    <span>Café com Leite</span>
-    <span>Bebidas Quentes</span>
-    <span>R$ 3,00</span>
-    <button class="btn-editar">Editar</button>
-    <button class="btn-excluir">Excluir</button>
-</div>
-
-<div class="barra-item">
-    <span>Capuccino</span>
-    <span>Bebidas Quentes</span>
-    <span>R$ 3,00</span>
-    <button class="btn-editar">Editar</button>
-    <button class="btn-excluir">Excluir</button>
-</div>
-
-<div class="barra-item">
-    <span>Capuccino com Canela</span>
-    <span>Bebidas Quentes</span>
-    <span>R$ 3,00</span>
-    <button class="btn-editar">Editar</button>
-    <button class="btn-excluir">Excluir</button>
-</div>
-
-<div class="barra-item">
-    <span>Leite com Chocolate</span>
-    <span>Bebidas Quentes</span>
-    <span>R$ 3,00</span>
-    <button class="btn-editar">Editar</button>
-    <button class="btn-excluir">Excluir</button>
-</div>
-
-<div class="barra-item">
-    <span>Mocaccino</span>
-    <span>Bebidas Quentes</span>
-    <span>R$ 3,00</span>
-    <button class="btn-editar">Editar</button>
-    <button class="btn-excluir">Excluir</button>
-</div>
 
     </section>
 
-<!-- EDITAR A REFEIÇÃO-->
-    <section id = "editar-refeicao">
-        <div>
+    <!-- EDITAR A REFEIÇÃO-->
+    <section id="editar-refeicao">
+        <div class="refeicao-dia">
             <p> ✍🏼 Refeições do Dia</p>
         </div>
         <div class="campo">
-        <label>Prato Principal:</label>
-        <input type="text">
-
-        <div class="campo">
-        <label>Acompanhamento:</label>
-        <input type="text">
-        
-        <div class="refeicao">
-
-            <div class="valor-item">
-                <label>• Marmita P</label>
-                <input type="text" value="R$18,00">
-            </div>
-
-            <div class="valor-item">
-                <label>• Marmita M</label>
-                <input type="text" value="R$20,00">
-            </div>
-
-            <div class="valor-item">
-                <label>• Prato Feito</label>
-                <input type="text" value="R$20,00">
-            </div>
-
-
-            <div class="valor-item">
-                <label>• Self-Service</label>
-                <input type="text" value="R$60,00/kg">
-            </div>
-
-            <!-- BOTAO -->
-    <div class="botao">
-        <button class="btn-salvar">
-            ✔ Salvar alteração
-        </button>
-    </div>
-
-
-
-
+            <label>Prato Principal:</label>
+            <input class="caixa-texto"type="text">
         </div>
 
-        
-        
+            <div class="campo">
+                <label>Acompanhamento:</label>
+                <input class="caixa-texto" type="text">
+                </div>
+                
+                <div class="valor-refeicao">
+                    <p> Valor das Refeições</p>
+                </div>
+                
+                <div class="refeicao">
+
+                    <div class="parte1">
+
+                    <div class="valor-item">
+                        <label>• Marmita P</label>
+                        <input type="text2" value="R$18,00">
+                    </div>
+
+                    <div class="valor-item">
+                        <label>• Marmita M</label>
+                        <input type="text2" value="R$20,00">
+                    </div>
+                    </div>
+                    
+
+                    
+                    <div class="parte2">
+                        <div class="valor-item">
+                            <label>• Prato Feito</label>
+                            <input type="text2" value="R$20,00">
+                        </div>
+                        
+                        
+                        <div class="valor-item">
+                            <label>• Self-Service</label>
+                            <input type="text2" value="R$60,00/kg">
+                        </div>
+                        
+                        
+                    </div>
+                </div>
+                
+                <!-- BOTAO -->
+                <div class="botao">
+                    <button class="btn-salvar">
+                        ✔ Salvar alteração
+                    </button>
+                </div>
+                
+                
+
+
+
+
     </section>
 
 
 
 
-    
+
 </body>
+
 </html>

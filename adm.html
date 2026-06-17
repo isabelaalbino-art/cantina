@@ -25,13 +25,13 @@
         <p>Digite a senha para acessar o painel de controle.</p>
         
         
-        <form>
+        <form id="formLogin">
             <div class="login">
                 
                 <p>Login:</p>
                 <div class="inputBg">
                     <img src="img/homem.png">
-                    <input type="text" placeholder="admin@admin.com">
+                    <input  id="login" type="text" placeholder="admin@admin.com">
                 </div>
             </div>
             
@@ -39,19 +39,21 @@
                 <p>Senha:</p>
                 <div class="inputBg">
                     <img src="img/cadado.png">
-                    <input type="password" placeholder="*********">
+                    <input id="senha" type="password" placeholder="*********">
                 </div>
             </div>
             
-            <button class="btnEntrar" type="submit">Entrar
+            <button  id="btnEntrar" type="submit">Entrar
             </button>
+
+               <p id="mensagemErro" class="erro" style="display: none;">Login ou senha incorretos.</p>
             
         </form>
         
     </div>
     <img src="img/design 1.png" class="design">
 
-    <script src="js/script.js"></script>
+    <script src="js/script-adm.js"></script>
 </body>
 
 </html>
