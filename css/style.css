@@ -2,24 +2,25 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+  transition: all 0.3s ease-in-out;
 }
 
-#menu{
-margin: 50px;
-padding: 50px;
-box-sizing: border-box;
-background: #663339;
+html {
+  scroll-behavior: smooth;
 }
 
- :root{
---vinho: #663339;
---creme: #F5F0E5;
---fundo: #ECE2CC;
---card: #6A363C;
---card2: #39060A;
---linear: #E0E0E0;
- }
- 
+:root {
+  --vinho: #663339;
+  --creme: #f5f0e5;
+  --fundo: #ece2cc;
+  --card: #6a363c;
+  --card2: #39060a;
+  --linear: #e0e0e0;
+  --cardapio: #482227;
+  --cardapio2: #773D43;
+
+}
+
 header {
   position: sticky;
   top: 0;
@@ -27,24 +28,25 @@ header {
   justify-content: space-between;
   align-items: center;
   height: 150px;
+  background: var(--creme);
   backdrop-filter: blur(15px);
   -webkit-backdrop-filter: blur(20px);
   box-shadow: 0 6px 6px rgb(0, 0, 0, 0.4);
-  background: var(--creme);
 }
 
-.logo{
-background-color: var(--vinho);
-  display: flex;
-  gap: 30px;
-  height: 90%;
-  border-radius: 150%;
-  background-color: var(--vinho);
+.foto-logo {
+  width: 200px;
+  height: auto;
+  position: relative;
+  top: 50px;
+  z-index: 10px;
+  margin: 30px;
+  overflow: hidden;
 }
 
 #menu {
   display: flex;
-  padding: 15px 70px;
+  padding: 15px 50px;
   position: relative;
   background-color: var(--vinho);
   border-radius: 20px;
@@ -53,48 +55,141 @@ background-color: var(--vinho);
 }
 
 #menu a {
-  color: var(--creme);
   text-decoration: none;
+  color: var(--creme);
   font-size: 17px;
+  margin: 8px;
   text-align: justify;
 }
 
 .hero {
   background-color: var(--fundo);
-  position: relative;
-  padding: 75px 5% 35px 5%;
-  box-shadow: 4px 4px 12px rgba(160, 145, 125, 0.25), 
-                -4px -4px 12px rgba(255, 255, 255, 0.7);
-    border: 1px solid rgba(255, 255, 255, 0.5);
-}
 
+  padding: 60px 3px 35px 5px;
+
+  display: flex;
+  justify-content: center;
+  gap: 10em;
+}
 .hero-content h1 {
-  font-size: 25px;
-  margin-bottom: 30px;
+  font-size: 35px;
+  margin-bottom: 40px;
   background: var(--fundo);
 }
 
 .hero-content p {
   font-size: 15px;
-  margin-bottom: 18px;
+  margin-bottom: 15px;
   text-align: justify;
 }
 
+.destaques {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+}
+
 .card {
+  background: var(--creme);
+  width: 220px;
+  height: 100px;
+  border: none;
+  border-radius: 16px;
+  padding: 28px 20px;
+  text-align: center;
+  box-shadow: 0px 4px 16px rgba(0, 0, 0, 0.08);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  margin-bottom: 40px;
+}
+
+.click {
+  cursor: pointer;
+}
+
+.click:hover {
+  transform: scale(1.1);
+}
+/*.card {
   background-color: var(--creme);
   color: var(--vinho);
    border-radius: 14px;
-  padding: 10px 10px;
-  font-size: 10px;
   text-align:center;
-  box-shadow:
-    5px 5px 15px rgba(0, 0, 0, 0.2),
-    -5px -5px 15px rgba(0, 0, 0, 0.2);
-  border: 1px solid rgba(255, 255, 255, 0.6);
-  width: 150px;
-  right: 100px;
-  margin-left: 1000px;
+   margin-bottom: 20px;
+   position: relative;
+   width: auto;
+  padding: 0;
+  display: grid;
+  gap: 16px;
+}*/
+
+/*box-shadow:
+  5px 5px 15px rgba(0, 0, 0, 0.2),
+  -5px -5px 15px rgba(0, 0, 0, 0.2);
+border: 1px solid rgba(255, 255, 255, 0.6);*/
+
+.inicio {
+  font-size: 30px;
+  background-color: var(--creme);
+  text-align: center;
+  padding: 60px 80px 80px;
+}
+
+.inicio h2 {
+  font-size: 16px;
+  font-weight: 700;
+  letter-spacing: 1px;
+  color: black;
+  margin-bottom: 5px;
+}
+
+.inicio p {
+  font-size: 46px;
+  color: var(--vinho);
+  margin-bottom: 48px;
+}
+
+.comidas {
+  display: flex;
+  justify-content: space-evenly;
+  margin-bottom: 48px;
+}
+
+.categoria {
+  text-decoration: none;
+  color: #ffff;
+  font-size: 20px;
+  background: var(--card);
+  border-radius: 30px;
+  padding: 15px 25px;
+  box-shadow: 0px 6px 12px rgba(0, 0, 0, 0.4);
+  width: 400px;
+  height: 60px;
 }
 
 
+/* ----------------------------------------------------*/
 
+
+.cardapio-completo{
+background: linear-gradient(135deg, var(--cardapio) 0%, var(--cardapio2) 100%);
+
+}
+
+.titulo-categoria{
+color: #ffff;
+font-size: 30px;
+text-align: center;
+
+}
+
+.categoria-bloco {
+  margin-bottom: 56px; /*  espaçamento externo na parte inferior de um elemento */
+ background: var(--creme);
+ border-radius: 20px;
+}
+
+.itens{
+
+}
