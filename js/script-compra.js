@@ -1,65 +1,72 @@
-let senha = document.getElementById("senha");
-let login = document.getElementById("login");
-let entrar =document.getElementById("bntEntrar");
+let itens = document.querySelectorAll(".item");
 
-let senhaUser = "senai567";
-let loginUser = "SilviaFestCantina"
+let totalPedido = 0;
+let qtdProdutos = 0;
 
-if( senha === senhaUser && login === loginUser){
-  window.location.href = 'area-adm.html';
-}
+for (let i = 0; i < itens.length; i++) {
 
+    let btnMais = itens[i].getElementsByClassName("btnMais")[0];
+    let btnMenos = itens[i].getElementsByClassName("btnMenos")[0];
+    let quantidade = itens[i].getElementsByClassName("quantidade")[0];
+    let preco = itens[i].getElementsByClassName("preco")[0];
 
+    let qtd = 0;
 
-
-
-
-
-
-
-
-/*document.addEventListener('DOMContentLoaded', function () {
-  const itens = document.querySelectorAll('.item');
-
-  itens.forEach(function (item) {
-    const precoEl = item.querySelector('.preco');
-    const controle = item.querySelector('.controle');
-    const btnMenos = controle.querySelector('button:first-child');
-    const btnMais = controle.querySelector('button:last-child');
-    const quantidadeEl = controle.querySelector('span');
-
-    // Lê o preço unitário a partir do texto "R$ 7,00" e converte para número (7.00)
-    const precoUnitario = parseFloat(
-      precoEl.textContent
-        .replace('R$', '')
-        .trim()
-        .replace(',', '.')
+    let precoUnitario = Number(
+        preco.innerHTML.replace("R$ ", "").replace(",", ".")
     );
 
-    let quantidade = 0;
+    btnMais.onclick = function () {
 
-    function atualizar() {
-      quantidadeEl.textContent = quantidade;
 
-      const total = precoUnitario * quantidade;
+    qtd++;
+    quantidade.innerHTML = qtd;
 
-      // Formata de volta para o padrão R$ 0,00
-      precoEl.textContent = 'R$ ' + total.toFixed(2).replace('.', ',');
+   preco.innerHTML =
+   "R$ " + (precoUnitario * qtd).toFixed(2).replace(".", ",");
+
+    totalPedido += precoUnitario;
+    qtdProdutos++;
+
+     document.getElementById("total-pagar").innerHTML =
+     "Total a pagar: R$ " + totalPedido.toFixed(2).replace(".", ",");
+
+     document.getElementById("quantidade-produtos").innerHTML =
+     "Quantidade de Produtos: " + qtdProdutos;
     }
 
-    btnMais.addEventListener('click', function () {
-      quantidade++;
-      atualizar();
-    });
+    btnMenos.onclick = function () {
 
-    btnMenos.addEventListener('click', function () {
-      if (quantidade > 0) {
-        quantidade--;
-        atualizar();
-      }
-    });
-  });
-});
-*/
+     if (qtd > 0) {
+
+     qtd--;
+    quantidade.innerHTML = qtd;
+
+     preco.innerHTML =
+     "R$ " + (precoUnitario * qtd).toFixed(2).replace(".", ",");
+
+     totalPedido -= precoUnitario;
+     qtdProdutos--;
+
+     document.getElementById("total-pagar").innerHTML =
+     "Total a pagar: R$ " + totalPedido.toFixed(2).replace(".", ",");
+
+   document.getElementById("quantidade-produtos").innerHTML =
+    "Quantidade de Produtos: " + qtdProdutos;
+        }
+    }
+}
+
+let voltar = document.getElementById("voltar");
+
+voltar.onclick = function () {
+    window.location.href = "index.html";
+}
+
+let botao = document.getElementById("botao-cima");
+
+botao.onclick = function () {
+    window.location.href = "index.html";
+}
 
 
