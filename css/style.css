@@ -3,7 +3,6 @@
   padding: 0;
   box-sizing: border-box;
   transition: all 0.3s ease-in-out;
-
 }
 
 html {
@@ -17,13 +16,9 @@ html {
   --card: #6a363c;
   --card2: #39060a;
   --linear: #e0e0e0;
-}
+  --cardapio: #482227;
+  --cardapio2: #773D43;
 
-#menu {
-  margin: 50px;
-  padding: 50px;
-  box-sizing: border-box;
-  background: #663339;
 }
 
 header {
@@ -33,21 +28,20 @@ header {
   justify-content: space-between;
   align-items: center;
   height: 150px;
+  background: var(--creme);
   backdrop-filter: blur(15px);
   -webkit-backdrop-filter: blur(20px);
   box-shadow: 0 6px 6px rgb(0, 0, 0, 0.4);
-  background: var(--creme);
 }
 
-.logo {
-  display: flex;
-  gap: 30px;
-  height: 100%;
-  border-radius: 150%;
-  background-color: var(--vinho);
+.foto-logo {
+  width: 200px;
+  height: auto;
   position: relative;
   top: 50px;
-  margin: 20px;
+  z-index: 10px;
+  margin: 30px;
+  overflow: hidden;
 }
 
 #menu {
@@ -61,28 +55,22 @@ header {
 }
 
 #menu a {
-  color: var(--creme);
   text-decoration: none;
+  color: var(--creme);
   font-size: 17px;
+  margin: 8px;
   text-align: justify;
 }
 
 .hero {
   background-color: var(--fundo);
-  position: relative;
+
   padding: 60px 3px 35px 5px;
 
   display: flex;
   justify-content: center;
   gap: 10em;
 }
-
-.hero-content{
-
-
-}
-
-
 .hero-content h1 {
   font-size: 35px;
   margin-bottom: 40px;
@@ -141,13 +129,67 @@ header {
   -5px -5px 15px rgba(0, 0, 0, 0.2);
 border: 1px solid rgba(255, 255, 255, 0.6);*/
 
-
-.inicio{
-font-size: 30px;
-background-color: var(--creme);
-text-align: center;
+.inicio {
+  font-size: 30px;
+  background-color: var(--creme);
+  text-align: center;
+  padding: 60px 80px 80px;
 }
 
-.inicio p{
-color: var(--vinho);
+.inicio h2 {
+  font-size: 16px;
+  font-weight: 700;
+  letter-spacing: 1px;
+  color: black;
+  margin-bottom: 5px;
+}
+
+.inicio p {
+  font-size: 46px;
+  color: var(--vinho);
+  margin-bottom: 48px;
+}
+
+.comidas {
+  display: flex;
+  justify-content: space-evenly;
+  margin-bottom: 48px;
+}
+
+.categoria {
+  text-decoration: none;
+  color: #ffff;
+  font-size: 20px;
+  background: var(--card);
+  border-radius: 30px;
+  padding: 15px 25px;
+  box-shadow: 0px 6px 12px rgba(0, 0, 0, 0.4);
+  width: 400px;
+  height: 60px;
+}
+
+
+/* ----------------------------------------------------*/
+
+
+.cardapio-completo{
+background: linear-gradient(135deg, var(--cardapio) 0%, var(--cardapio2) 100%);
+
+}
+
+.titulo-categoria{
+color: #ffff;
+font-size: 30px;
+text-align: center;
+
+}
+
+.categoria-bloco {
+  margin-bottom: 56px; /*  espaçamento externo na parte inferior de um elemento */
+ background: var(--creme);
+ border-radius: 20px;
+}
+
+.itens{
+
 }
